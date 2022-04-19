@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 16 - forms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+
+        </header>
+        <main class="main">
+            <div class="appointment">
+                <div class="appointment__container">
+                    <div class="appointment__content">
+                        <div class="appointment__wrapper-form">
+                            <h2 class="appointment__wrapper-title">Make an appointment</h2>
+                            <form action="#" class="appointment__form">
+                                <input required placeholder="Name" name="name" type="text" value="" autocomplete="off" class="appointment__form-item">
+
+                                <input required placeholder="Email" name="email" type="email" value="" autocomplete="off" class="appointment__form-item">
+
+                                <input required placeholder="Phone Number" name="phone" type="tel" value="" autocomplete="off" class="appointment__form-item">
+
+                                <select required name="services" class="appointment__form-item appointment__form-item_select">
+                                    <option value="" selected disabled="disabled" class="appointmen__option">Select Service</option>
+                                    <option value="1" class="appointmen__option">Pet Daycare</option>
+                                    <option value="2" class="appointmen__option">Custom Meal Plans</option>
+                                    <option value="3" class="appointmen__option">Pet Training</option>
+                                    <option value="4" class="appointmen__option">Pet Day Spa</option>
+                                    <option value="5" class="appointmen__option">Shop Our Store</option>
+                                </select>
+                                <textarea placeholder="Tell us about your puppers include his/her name" name="about-you" class="appointment__form-item appointment__form-item_text-area" ></textarea>
+                                <button class="appointment__button" type="submit">Make an Appointment</button>
+                            </form>
+                            
+                        </div>
+                        <div class="appointment__body">
+                            <h2 class="appointment__title">
+                                Maxime placeat facere possimus omnis 
+                            </h2>
+                            <p class="appointment__number">
+                                5,700+
+                            </p>
+                            <h2 class="appointment__subtitle">
+                                customers served
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="customers">
+                <h2 class="customers__title">
+                    Registered Customers
+                </h2>
+                <h2 class="customers__subtitle">
+                    If you have an account, sign in with your email address.
+                </h2>
+                <form action="#" class="customers__form">
+                    <div class="customers__item">
+                        <label for="email" class="customers__label">Email</label>
+                        <input autocomplete="off" required type="email" placeholder="Your Name" name="email" value="" id="email" class="customers__input">
+                        
+                    </div>
+                    <div class="customers__item">
+                        <label for="pass" class="customers__label">Password</label>
+                        <input autocomplete="off" required type="password" placeholder="Your Name" name="pass" value="" id="pass" class="customers__input">
+                        
+                    </div>
+                    <div class="customers__buttons">
+                        <button type="submit" class="customers__sing-in">Sing In</button>
+                        <button type="submit" class="customers__forgot">Forgot your Password</button>
+                    </div>
+                </form>
+            </div>
+            <div class="summary">
+                <h2 class="summary__title">
+                    Summary
+                </h2>
+                <h2 class="summary__subtitle">
+                    Estimate Shipping and Tax
+                </h2>
+                <h2 class="summary__name">
+                    Enter your destination to get a shipping estimate.
+                </h2>
+                <form action="#" class="summary__form">
+                    <div class="summary__item">
+                        <label for="country" class="summary__label">Country</label>
+                        <select name="country" id="country" class="summary__select">
+                            <option class="summary__select-item" value="1" selected>Australia</option>
+							<option class="summary__select-item" value="2">USA</option>
+							<option class="summary__select-item" value="3">Germany</option>
+                        </select>
+                    </div>
+                    <div class="summary__item">
+                        <label for="state" class="summary__label">State/Province</label>
+                        <input autocomplete="off" required type="text"  name="state" value="" id="state" class="summary__input">
+                    </div>
+                    <div class="summary__item">
+                        <label for="zip" class="summary__label">Zip/Postal Code</label>
+                        <input autocomplete="off" required type="text"  name="state" value="" id="zip" class="summary__input">
+                    </div>
+                    <div class="summary__item">
+                        <h2 class="summary__label">Standard Rate</h2>
+                            <input class="summary__radio" type="radio" name="price" value="1" id="standard">
+                            <label for="standard" class="summary__text">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                    </div>
+                    <div class="summary__item">
+                        <h2 class="summary__label">Pickup from store</h2>
+                            <input class="summary__radio" type="radio" name="price" value="1" id="store">
+                            <label for="store" class="summary__text">1234 Street Adress City Address, 1234 $0.00</label>
+                        </div>
+                    
+                    <div class="summary__item">
+                        <h2 class="summary__subtitle">
+                            Apply Discount Code
+                        </h2>
+                        <label for="code" class="summary__label">Enter discount code</label>
+                        <input autocomplete="off" placeholder="Enter Discount code" required type="text"  name="state" value="" id="code" class="summary__input">
+                    </div>
+                        <button type="submit" class="summary__button">Apply Discount</button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import 'null.css';
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-size: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    /* font-family: 'Poiret One', cursive; */
+    font-size: 18px;
+    line-height: 1.5;
+    color: #77bcfc;
+    text-shadow: -3px 3px 5px #000;
+}
+.wrapper{
+    background: linear-gradient(142deg, rgba(237,73,73,1) 0%, rgba(255,102,0,1) 38%, rgba(237,166,73,1) 74%, rgba(228,237,73,1) 100%);
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+.questions {
+    margin: 20px auto;
+    max-width: 600px;
+    background: #001aff;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 16px -13px 14px 0px rgba(29,36,196,0.75);
+}
+.questions__title {
+    text-align: center;
+    color: #77bcfc;
+    font-size: 30px;
+    padding: 30px 30px 0px 30px;
+    margin-bottom: 20px;
+}
+
+.questions__form {
+    padding:0px 30px 30px ;
+}
+.form-questions__item {
+    margin-bottom: 20px;
+}
+.form-questions__label {
+    display: block;
+}
+.form-questions__label:not(:last-child){
+    margin-bottom: 5px;
+}
+.form-questions__input,.form-questions__select {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.form-questions__input:focus::placeholder, 
+.form-questions__text:focus::placeholder{
+    transform: translateX(-100%);
+    transition: all 2s ease;
+}
+.form-questions__text {
+    display: block;
+    width: 100%;
+    height: 100px;
+    max-height: 250px;
+    resize: vertical;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.form-questions__text::placeholder,
+.form-questions__input, 
+.form-questions__input::placeholder{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+}
+.form-questions__wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 15px;
+}
+.form-questions__radio-button, .form-questions__together{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+.form-questions__radio {
+    opacity: 0;
+    cursor: pointer;
+    position: relative;
+}
+.form-questions__radio:checked + .form-questions__experience::after {
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+}
+.form-questions__experience{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.form-questions__experience::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: aliceblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: -30px;
+}
+.form-questions__experience::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: -25px;
+    transform: scale(0);
+}
+.form-questions__together{
+    display: flex;
+    gap: 8px;
+}
+.form-questions__check{
+    opacity: 0;
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+}
+.form-questions__check:checked + .form-questions__check-button::after{
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+}
+.form-questions__check-button{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.form-questions__check-button::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 0px;
+    left: -40px;
+}
+.form-questions__check-button::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../img/okey.png) 0 0 no-repeat;
+    position: absolute;
+    top: 4px;
+    left: -35px;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+.form-questions__icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.form-questions__icons img {
+    width:25px;
+    height: 25px;
+}
+.form-questions__range {
+    width: 100%;
+}
+.form-questions__buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form-questions__button {
+    padding: 10px 20px;
+    flex: 1 1 250px;
+    font-size: 16px;
+    border-radius: 10px;
+    display: block;
+    background: #77bcfc;
+    color: #001aff;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #020e7a;
+    transition: all 0.3s ease;
+}
+.form-questions__button:hover{
+    background: #20f;
+    transition: all 0.3s ease;
+    color: #77bcfc;
+    box-shadow: 5px 5px 5px #000;
+}

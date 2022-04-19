@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questionnaire</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="questions">
+                <h1 class="questions__title">Анкета участника курса</h1>
+                <form class="questions__form form-questions" action="#">
+                    <div class="form-questions__item" >
+                        <label for="name" class="form-questions__label">Как Вас зовут?</label>
+                        <input type="text" required placeholder="Имя" class="form-questions__input" name="name" id="name" value="">
+                        
+                    </div>
+                    <div class="form-questions__item" >
+                        <label for="years" class="form-questions__label">Ваш возраст?</label>
+                        <input type="number" required placeholder="Ваш возраст" class="form-questions__input" name="number" id="years" value="" autocomplete="off">
+                        
+                    </div>
+                    <div class="form-questions__item form-questions__item_select">
+                        <label for="country" class="form-questions__label form-questions__label">С какой Вы страны?</label>
+                        <select name="country" id="country" class="form-questions__select">
+                            <option class="form-questions__item-select" value="1" selected>Украина</option>
+                            <option class="form-questions__item-select" value="2">Россия</option>
+                            <option class="form-questions__item-select" value="3">Польша</option>
+                            <option class="form-questions__item-select" value="4">Чехия</option>
+                            <option class="form-questions__item-select" value="5">Казахстан</option>
+                            <option class="form-questions__item-select" value="6">Молдова</option>
+                        </select>
+                    </div>
+                    <div class="form-questions__item">
+                        <label for="why" class="form-questions__label">Почему выбрали именно этот курс?</label>
+                        <textarea name="why" id="why" class="form-questions__text" placeholder="Почему выбрали именно этот курс?"></textarea>
+                    </div>
+                    <div class="form-questions__item">
+                        <h2 class="form-questions__label">Был ли у вас подобный опыт перед началом курса? </h2>
+                            <div class="form-questions__wrapper">
+                                <div class="form-questions__radio-button"> 
+                                    <input type="radio" id="experience-yes" name="experience" class="form-questions__radio" value="1" required>
+                                        <label class="form-questions__experience" for="experience-yes">Да</label>
+                                </div>
+                                <div class="form-questions__radio-button">
+                                    <input type="radio" id="experience-no" name="experience" class="form-questions__radio" value="2" required>
+                                        <label class="form-questions__experience" for="experience-no">Нет</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-questions__item">
+                        <h2 class="form-questions__label">Почему хотите работать в этой сфере?</h2>
+                        <div class="form-questions__wrapper">
+                            <div class="form-questions__together">
+                                <input type="checkbox" class="form-questions__check" name="reason" id="money" value="1">
+                                    <label class="form-questions__check-button" for="money">Высокая зароботная плата</label>
+                            </div>
+                            <div class="form-questions__together"> 
+                                <input type="checkbox" class="form-questions__check" name="reason" id="work-home" value="2">
+                                    <label class="form-questions__check-button" for="work-home">Возможность работать удалённо</label>
+                            </div>
+                            <div class="form-questions__together">
+                                <input type="checkbox" class="form-questions__check" name="reason" id="like-it" value="3">
+                                    <label class="form-questions__check-button" for="like-it">Нравится программирование</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-questions__item">
+                        <h2 class="form-questions__label">Какая тема урока была самой сложной? </h2>
+                        <div class="form-questions__wrapper">
+                            <div class="form-questions__radio-button">
+                                <input type="radio" id="hard-theme-position" name="hard-theme" class="form-questions__radio" value="1" required>
+                                    <label class="form-questions__experience" for="hard-theme-position">Позиционирование</label>
+                            </div>
+                            <div class="form-questions__radio-button">
+                                <input type="radio" id="hard-theme-bem" name="hard-theme" class="form-questions__radio" value="2" required>
+                                    <label class="form-questions__experience" for="hard-theme-bem">Методология БЭМ</label>
+                            </div>
+                            <div class="form-questions__radio-button">
+                                <input type="radio" id="hard-theme-flex" name="hard-theme" class="form-questions__radio" value="2" required>
+                                    <label class="form-questions__experience" for="hard-theme-flex">Флексы</label>
+                            </div>
+                            <div class="form-questions__radio-button">
+                                <input type="radio" id="hard-theme-animation" name="hard-theme" class="form-questions__radio" value="2" required>
+                                    <label class="form-questions__experience" for="hard-theme-animation">Анимация</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-questions__item">
+                        <label for="range" class="form-questions__label">Как Вы оцениваете курс? </label>
+                        <div class="form-questions__icons">
+                            <img src="img/3.png" alt="dislike">
+                            <img src="img/2.png" alt="normal">
+                            <img src="img/1.png" alt="like">
+                        </div>
+                        <input class="form-questions__range" autocomplete="off" name="range" id="range" type="range">
+                    </div>
+                    <div class="form-questions__buttons">
+                        <button class="form-questions__button" type="submit">Отправить</button>
+                        <button class="form-questions__button" type="reset">Очистить</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
